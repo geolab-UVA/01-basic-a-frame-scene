@@ -7,7 +7,7 @@ This whole scene is a single html file. HTML files are files containing webpages
 You could save the file [index.html](index.html) to your computer (e.g. by cloning this repo). Then you can open it in a browser to view it.
 
 ## Editing using a sandbox
-There are many sandbox environments on the web preconfigured to edit html+javascript code. Experiment with this sandbox 
+There are many sandbox environments on the web preconfigured to edit html+javascript code. To open any github repo in [codesandbox.io](https://codesandbox.io) change the url from ```github.com/[...]``` to ```githubbox.com/[...]```. Note that any changes you do will be stored on [codesandbox.io](https://codesandbox.io) and will not be contributed back to this repository. 
 
 ## Basic HTML
 This page is written in HTML+Javascript. Take a look at 

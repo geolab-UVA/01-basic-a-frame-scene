@@ -11,16 +11,24 @@ There are many sandbox environments on the web preconfigured to edit html+javasc
 
 Here is how it should look like in your sandbox:
 
-![image](https://user-images.githubusercontent.com/7040974/214770151-1ac1abf4-a76e-4991-a0e5-b353be9eedc7.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/7040974/214770151-1ac1abf4-a76e-4991-a0e5-b353be9eedc7.png"
+alt="Sandbox view" width="500em" /></p>
 
 You can: 
 - fork the sandbox to make changes to it
-![image](https://user-images.githubusercontent.com/7040974/214770251-13e2dcb3-f6e8-41ab-bfe5-514794470649.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/7040974/214770251-13e2dcb3-f6e8-41ab-bfe5-514794470649.png"
+alt="fork button in the sandbox environment"
+width="300em" /></p>
+
 - close the left side panel to have more room to edit
+
 - move around the scene in the right window
-![image](https://user-images.githubusercontent.com/7040974/214770405-2a0e8101-bb1a-420d-be74-62422c0b9955.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/7040974/214770405-2a0e8101-bb1a-420d-be74-62422c0b9955.png" alt="The live preview of the scene" width="500em" /> </p>
+
 - pop out the window into a separate tab if you want more room to code and explore:
-![image](https://user-images.githubusercontent.com/7040974/214770573-b0d5bbf3-5a81-4b28-b3a3-96066fbf5160.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/7040974/214770573-b0d5bbf3-5a81-4b28-b3a3-96066fbf5160.png" width="500em"
+/> </p>
 
 
 

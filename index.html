@@ -7,34 +7,59 @@
     <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
     <title>A Basic A-Frame scene</title>
   </head>
-  <!-- This is a comment -->
+  <!-- 
+    This is a comment 
+    Nothing here gets parsed by the browser
+  -->
   <body>
-    <!-- Any a-frame scene is contained inside an <a-scene> tag. -->
+    <!-- Any A-Frame scene is contained inside an <a-scene> tag. -->
     <a-scene>
-      <!-- A scene consists of entities. Entities by themselves do not contain or display anything. You must endow them with components. 
-         See the documentation for a list of components -->
-
       <!-- This is the camera -->
-      <a-entity id="rig" position="0 1.6 0">
+      <!--
+        Let us not worry about the camera for now.
+        The code below specifies a camera that can be controlled with a keyboard
+        and by looking around with a mouse
+      -->
+      <a-entity id="rig" wasd-controls position="0 0 0">
         <a-entity
           id="camera"
           camera="fov:55"
+          position="0 1.6 0"
           look-controls
-          wasd-controls
         ></a-entity>
       </a-entity>
 
-      <!-- These are two boxes-->
+      <!-- # Entities
+        A scene consists of entities.
+        Entities are custom html tags of type `<a-entity>`.
+        Do not forget the closing tag `</a-entity>`.
+        
+        Entities by themselves do not contain or display anything.
+        To make an entity do something you need to assign components to them.
+        
+        Components look like html attributes: they are specified in the opening <a-entity> tag
+          Example (below):
+          - `id` is an HTML attribute; it specifies a unique identifier for the element
+          - `geometry` is an A-Frame component; it tells us that the entity has a geometry (a shape)
+          - `material` is an A-Frame component; it tells us that the entity has a material (color/texture)
+          - `position` is an A-Frame component; it tells us that the entity has a place in space (coordinates)
+          - `rotation` is an A-Frame component; it tells us that the entity is rotated in space somehow (expressed using Euler angles)
+        Components/attributes come usually in name/value pairs
+
+        See the documentation for a list of components 
+        -->
+
+      <!-- This is a red box-->
       <a-entity
-        id="Box 1"
+        id="box1"
         geometry="primitive: box"
         material="color: red"
         position="1 0 -3"
         rotation="0 0 0"
       ></a-entity>
-
+      <!-- This is a blue box-->
       <a-entity
-        id="Box 2"
+        id="box2"
         geometry="primitive: box"
         material="color: blue"
         position="-1 0 -5"
@@ -47,10 +72,10 @@
         material="color: #7BC8A4; side: double"
         height="100"
         width="100"
-        rotation="-90 0 0"
+        rotation="-90 00 00"
       ></a-entity>
 
-      <a-sky color="#BCBCBC"></a-sky>
+      <a-sky color="#1A0A1A"></a-sky>
     </a-scene>
   </body>
 </html>

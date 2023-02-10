@@ -1,8 +1,6 @@
 # A basic A-Frame scene
 
-This page contains a basic scene that is created using the a-frame library https://aframe.io/
-
-This whole scene is a single html file. HTML files are files containing webpages.
+This page contains a basic scene that is created using the library [A-frame](https://aframe.io/). The whole scene is a single html file. HTML files are files containing webpages.
 
 ## Editing using a sandbox
 

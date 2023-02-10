@@ -1,6 +1,10 @@
 # A basic A-Frame scene
 
-This page contains a basic scene that is created using the library [A-frame](https://aframe.io/). The whole scene is a single html file. HTML files are files containing webpages.
+This page contains a basic scene that is created using the [A-frame](https://aframe.io/) library. The whole scene is a single HTML file; HTML files are files containing webpages. 
+
+
+Documentation for A-Frame is available from https://aframe.io/docs/master/introduction/
+
 
 ## Editing using a sandbox
 
@@ -56,7 +60,5 @@ The library A-Frame, used for creating immersive graphical websites is pulled in
     <!-- other boilerplate goes here -->
 <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script> <!-- 
 ```
-
 The library is not stored on your computer, it is downloaded from the internet by your browser.
 
-Documentation for A-Frame is available from https://aframe.io/docs/master/introduction/

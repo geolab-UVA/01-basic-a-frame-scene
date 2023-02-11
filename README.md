@@ -57,8 +57,10 @@ The library A-Frame, used for creating immersive graphical websites is pulled in
 
 ```html
 <head>
-    <!-- other boilerplate goes here -->
-<script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script> <!-- 
+    <!-- ... -->
+<script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script> 
+    <!-- ... -->
+</head>
 ```
 The library is not stored on your computer, it is downloaded from the internet by your browser.
 

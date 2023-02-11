@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Above is a declaration that this is an HTML file in english-->
-  <!-- Next is the "header" of the HTML file. It specifies some 
+<!-- Above is a declaration that this is an HTML file in english-->
+<!-- Next is the "header" of the HTML file. It specifies some 
     important information and preliminaries. The hearder is enclosed in the 
   `<head>``</head>` tag -->
-  <head>
-    <!-- Some standards-compliant boilerplate. Just ignore this -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- Next, we pull in the A-Frame library -->
-    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
-    <!-- Next, we have the title of our page-->
-    <title>A Basic A-Frame scene</title>
-  </head>
-  <!-- This is a comment.
-    Nothing here gets parsed by the browser.-->
 
-  <!-- Next, we start with the body of our document, 
-      enclosed in the `<body>` `</body>` tags.-->
-  <body>
-    <!-- Any A-Frame scene must be contained inside an `<a-scene>` tag. 
+<head>
+  <!-- Some standards-compliant boilerplate. Just ignore this -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- Next, we pull in the A-Frame library -->
+  <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  <!-- Next, we have the title of our page-->
+  <title>A Basic A-Frame scene</title>
+</head>
+<!-- 
+  This is a comment. Nothing here gets parsed by the browser.
+  -->
 
+<!-- Next, we start with the body of our document, enclosed in the `<body>` `</body>` tags.
+  -->
+
+<body>
+  <!-- 
+    Any A-Frame scene must be contained inside an `<a-scene>` tag. 
     -->
-    <a-scene>
-      <!-- 
-        ## The scene
+  <a-scene>
+    <!-- ## The scene
         Next, we initialize the camera 
 
         The code below specifies a camera that can be controlled with a keyboard
@@ -33,16 +35,11 @@
         
         Let us not worry about the camera for now. A-Frame takes care of most of the setup for us.
       -->
-      <a-entity id="rig" wasd-controls position="0 0 0">
-        <a-entity
-          id="camera"
-          camera="fov:55"
-          position="0 1.6 0"
-          look-controls
-        ></a-entity>
-      </a-entity>
+    <a-entity id="rig" wasd-controls position="0 0 0">
+      <a-entity id="camera" camera="fov:55" position="0 1.6 0" look-controls></a-entity>
+    </a-entity>
 
-      <!--
+    <!--
         ## Entities
         An A-Frame scene consists of entities.
         Entities are custom html tags of type `<a-entity>`.
@@ -62,35 +59,25 @@
         Components/attributes come usually in name/value pairs.
         -->
 
-      <!-- This is a red box-->
-      <a-entity
-        id="box1"
-        geometry="primitive: box"
-        material="color: red"
-        position="1 0 -3"
-        rotation="0 0 0"
-      ></a-entity>
+    <!-- This is a red box-->
+    <a-entity id="box1" geometry="primitive: box" material="color: red" position="1 0 -3" rotation="0 0 0"></a-entity>
 
-      <!-- This is a blue box-->
-      <a-entity
-        id="box2"
-        geometry="primitive: box"
-        material="color: blue"
-        position="-1 0 -5"
-        rotation="0 45 0"
-      ></a-entity>
+    <!-- This is a blue box-->
+    <a-entity id="box2" geometry="primitive: box" material="color: blue" position="-1 0 -5" rotation="0 45 0">
+    </a-entity>
 
-      <!-- This is the floor and sky (making it a more pleasant color than white)-->
-      <a-entity
-        id="floor"
-        geometry="primitive: plane; width: 20; height: 20"
-        material="color: #7BC8A4; side: double"
-        height="100"
-        width="100"
-        rotation="-90 00 00"
-      ></a-entity>
+    <!-- This is the floor-->
+    <a-entity id="floor" geometry="primitive: plane; width: 20; height: 20" material="color: #7BC8A4; side: double"
+      height="100" width="100" rotation="-90 00 00"></a-entity>
+    <!-- We add a sky (making it a more pleasant color than white) -->
+    <!-- A-Frame has some pre-configured entities, called primitives, that can be invoked with a special tag. For example <a-sky> below. 
+    Primitives are just convenience tags for preconfigured entities.
 
-      <a-sky id="sky" color="#1A0A2A"></a-sky>
-    </a-scene>
-  </body>
+    For more information about primitives, see https://aframe.io/docs/1.4.0/introduction/html-and-primitives.html .
+    For a complete list of premitives, see the `primitives` section in https://aframe.io/docs .
+    -->
+    <a-sky id="sky" color="#1A0A2A"></a-sky>
+  </a-scene>
+</body>
+
 </html>
